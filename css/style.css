@@ -25,7 +25,57 @@
   transition: 0.5s;
   z-index: 99;
 }
+/*** Button 5 Start ***/
 
+/* 5 */
+.btn-5 {
+  width: 130px;
+  height: 40px;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+  background: rgb(255, 27, 0);
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+}
+.btn-5:hover {
+  color: linear-gradient(to right, #780206, #061161);
+  background: transparent;
+  box-shadow: none;
+}
+.btn-5:before,
+.btn-5:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: linear-gradient(to right, #141e30, #243b55); /*after lines*/
+  box-shadow: -1px -1px 5px 0px #fff, 7px 7px 20px 0px #0003,
+    4px 4px 5px 0px #0002;
+  transition: 400ms ease all;
+}
+.header-carousel-item video {
+  width: 100%;
+  height: auto;
+}
+.btn-5:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+
+.custom-btn:hover .topbtn {
+  /* Color of the text on hover */
+  color: rgb(94, 89, 234); /* Change to your desired color */
+}
+
+.btn-5:hover:before,
+.btn-5:hover:after {
+  width: 100%;
+  transition: 800ms ease all;
+}
 /*** Button Start ***/
 .btn {
   font-weight: 600;
@@ -144,7 +194,7 @@
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .nav-item .nav-link:hover,
 .navbar-light .navbar-nav .nav-item .nav-link.active {
-  color: var(--bs-red);
+  color: var(--bs-primary);
 }
 
 .navbar-light .navbar-brand img {
