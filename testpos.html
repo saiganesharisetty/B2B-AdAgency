@@ -1,0 +1,484 @@
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <title>Image and Text Hover Effect</title>
+    <style>
+      .image-container {
+        position: relative;
+        display: inline-block;
+      }
+
+      .image-container img {
+        display: block;
+        width: 70vh;
+        height: 50vh;
+        transition: opacity 0.3s;
+      }
+
+      .image-container .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        opacity: 0;
+        transition: opacity 0.3s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .image-container:hover .overlay {
+        opacity: 1;
+      }
+
+      .image-container:hover img {
+        opacity: 0;
+      }
+
+      .image-container .hover-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 70vh;
+        height: 50vh;
+        display: none;
+      }
+
+      .image-container:hover .hover-image {
+        display: block;
+        opacity: 1;
+      }
+
+      .overlay h1 {
+        font-size: 24px;
+        margin: 0;
+      }
+
+      .overlay p {
+        font-size: 16px;
+        margin: 10px 0 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="image-container">
+      <img src="img/image_part_001.jpg" alt="Sample Image" />
+      <img src="img/service-1.jpg" alt="Hover Image" class="hover-image" />
+      <div class="overlay">
+        <div>
+          <h1>AD Films</h1>
+          <p>Your description here.</p>
+          <br />
+          <a class="btn btn-primary rounded-pill py-2 px-4" href="#"
+            >Learn More</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="image-container">
+      <img src="img/image_part_002.jpg" alt="Sample Image" />
+      <img src="img/service-2.jpg" alt="Hover Image" class="hover-image" />
+      <div class="overlay">
+        <div>
+          <h1>Your Title Here</h1>
+          <p>Your description here.</p>
+          <br />
+          <a class="btn btn-primary rounded-pill py-2 px-4" href="#"
+            >Learn More</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="image-container">
+      <img src="img/image_part_003.jpg" alt="Sample Image" />
+      <img src="img/service-3.jpg" alt="Hover Image" class="hover-image" />
+      <div class="overlay">
+        <div>
+          <h1>Your Title Here</h1>
+          <p>Your description here.</p>
+          <br />
+          <a class="btn btn-primary rounded-pill py-2 px-4" href="#"
+            >Learn More</a
+          >
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="image-container">
+      <img src="img/image_part_004.jpg" alt="Sample Image" />
+      <img src="img/service-4.jpg" alt="Hover Image" class="hover-image" />
+      <div class="overlay">
+        <div>
+          <h1>Your Title Here</h1>
+          <p>Your description here.</p>
+          <br />
+          <a class="btn btn-primary rounded-pill py-2 px-4" href="#"
+            >Learn More</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="image-container">
+      <img src="img/image_part_005.jpg" alt="Sample Image" />
+      <img src="img/service-5.jpg" alt="Hover Image" class="hover-image" />
+      <div class="overlay">
+        <div>
+          <h1>Your Title Here</h1>
+          <p>Your description here.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="image-container">
+      <img src="img/image_part_006.jpg" alt="Sample Image" />
+      <img src="img/service-6.jpg" alt="Hover Image" class="hover-image" />
+      <div class="overlay">
+        <div>
+          <h1>Your Title Here</h1>
+          <p>Your description here.</p>
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="image-container">
+      <img src="img/image_part_007.jpg" alt="Sample Image" />
+      <img src="img/service-7.jpg" alt="Hover Image" class="hover-image" />
+      <div class="overlay">
+        <div>
+          <h1>Your Title Here</h1>
+          <p>Your description here.</p>
+          <br />
+          <a class="btn btn-primary rounded-pill py-2 px-4" href="#"
+            >Learn More</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="image-container">
+      <img src="img/image_part_001.jpg" alt="Sample Image" />
+      <img src="img/service-1.jpg" alt="Hover Image" class="hover-image" />
+      <div class="overlay">
+        <div>
+          <h1>Your Title Here</h1>
+          <p>Your description here.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="image-container">
+      <img src="img/image_part_001.jpg" alt="Sample Image" />
+      <img src="img/service-1.jpg" alt="Hover Image" class="hover-image" />
+      <div class="overlay">
+        <div>
+          <h1>Your Title Here</h1>
+          <p>Your description here.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+-->
+<div class="servicesection">
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+      <title>Image and Video Hover Effect</title>
+      <style>
+        .custom-btn {
+          width: 130px;
+          height: 40px;
+          color: #fff;
+          border-radius: 5px;
+          padding: 10px 25px;
+          font-family: "Lato", sans-serif;
+          font-weight: 500;
+          background: transparent;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          position: relative;
+          display: inline-block;
+          box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+            7px 7px 20px 0px rgba(0, 0, 0, 0.1),
+            4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+          outline: none;
+        }
+
+        /* 6 */
+        .btn-6 {
+          background: rgb(247, 150, 192);
+          background: radial-gradient(
+            circle,
+            rgba(247, 150, 192, 1) 0%,
+            rgba(118, 174, 241, 1) 100%
+          );
+          line-height: 42px;
+          padding: 0;
+          border: none;
+        }
+        .btn-6 span {
+          position: relative;
+          display: block;
+          width: 100%;
+          height: 100%;
+        }
+        .btn-6:before,
+        .btn-6:after {
+          position: absolute;
+          content: "";
+          height: 0%;
+          width: 1px;
+          box-shadow: -1px -1px 20px 0px rgba(255, 255, 255, 1),
+            -4px -4px 5px 0px rgba(255, 255, 255, 1),
+            7px 7px 20px 0px rgba(0, 0, 0, 0.4),
+            4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+        }
+        .btn-6:before {
+          right: 0;
+          top: 0;
+          transition: all 500ms ease;
+        }
+        .btn-6:after {
+          left: 0;
+          bottom: 0;
+          transition: all 500ms ease;
+        }
+        .btn-6:hover {
+          background: transparent;
+          color: #76aef1;
+          box-shadow: none;
+        }
+        .btn-6:hover:before {
+          transition: all 500ms ease;
+          height: 100%;
+        }
+        .btn-6:hover:after {
+          transition: all 500ms ease;
+          height: 100%;
+        }
+        .btn-6 span:before,
+        .btn-6 span:after {
+          position: absolute;
+          content: "";
+          box-shadow: -1px -1px 20px 0px rgba(255, 255, 255, 1),
+            -4px -4px 5px 0px rgba(255, 255, 255, 1),
+            7px 7px 20px 0px rgba(0, 0, 0, 0.4),
+            4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+        }
+        .btn-6 span:before {
+          left: 0;
+          top: 0;
+          width: 0%;
+          height: 0.5px;
+          transition: all 500ms ease;
+        }
+        .btn-6 span:after {
+          right: 0;
+          bottom: 0;
+          width: 0%;
+          height: 0.5px;
+          transition: all 500ms ease;
+        }
+        .btn-6 span:hover:before {
+          width: 100%;
+        }
+        .btn-6 span:hover:after {
+          width: 100%;
+        }
+
+        .image-container {
+          position: relative;
+          display: inline-block;
+          margin: -2px;
+        }
+
+        .image-container img {
+          display: block;
+          width: 65vh;
+          height: 55vh;
+          transition: opacity 0.3s;
+        }
+
+        .image-container .overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 70vh;
+          height: 50vh;
+          background: rgba(0, 0, 0, 0.5);
+          color: white;
+          opacity: 0;
+          transition: opacity 0.3s;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+        }
+
+        .image-container:hover .overlay {
+          opacity: 1;
+        }
+
+        .image-container:hover img {
+          opacity: 0;
+        }
+
+        .image-container .hover-video {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 70vh;
+          height: 50vh;
+          display: none;
+          object-fit: cover;
+        }
+
+        .image-container:hover .hover-video {
+          display: block;
+        }
+
+        .overlay h1 {
+          font-size: 24px;
+          margin: 0;
+        }
+
+        .overlay p {
+          font-size: 16px;
+          margin: 10px 0 0;
+        }
+
+        
+      </style>
+    </head>
+    <body>
+      <div class="image-container">
+        <img src="img/image_part_001.jpg" alt="Sample Image" />
+        <video class="hover-video" autoplay muted loop>
+          <source
+            src="https://videos.pexels.com/video-files/8089117/8089117-uhd_2732_1440_25fps.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+        <div class="overlay">
+          <div>
+            <h1>AD Films</h1>
+            <p>Your description here.</p>
+            <br />
+            <button class="custom-btn btn-6"><span>Read More</span></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="image-container">
+        <img src="img/image_part_002.jpg" alt="Sample Image" />
+        <video class="hover-video" autoplay muted loop>
+          <source
+            src="https://videos.pexels.com/video-files/6706920/6706920-hd_1920_1080_25fps.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+        <div class="overlay">
+          <div>
+            <h1>Product Shoots</h1>
+            <p>Your description here.</p>
+            <br />
+            <button class="custom-btn btn-6"><span>Read More</span></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="image-container">
+        <img src="img/image_part_003.jpg" alt="Sample Image" />
+        <video class="hover-video" autoplay muted loop>
+          <source
+            src="https://videos.pexels.com/video-files/853988/853988-hd_1920_1080_25fps.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+        <div class="overlay">
+          <div>
+            <h1>Social Media Marketing</h1>
+            <p>Your description here.</p>
+            <br />
+            <button class="custom-btn btn-6"><span>Read More</span></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="image-container">
+        <img src="img/image_part_004.jpg" alt="Sample Image" />
+        <video class="hover-video" autoplay muted loop>
+          <source
+            src="https://videos.pexels.com/video-files/7308231/7308231-hd_1080_1920_24fps.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+        <div class="overlay">
+          <div>
+            <h1>Digital Media Marketing</h1>
+            <p>Your description here.</p>
+            <br />
+            <button class="custom-btn btn-6"><span>Read More</span></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="image-container">
+        <img src="img/image_part_005.jpg" alt="Sample Image" />
+        <video class="hover-video" autoplay muted loop>
+          <source
+            src="https://videos.pexels.com/video-files/5266564/5266564-hd_1920_1080_30fps.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+        <div class="overlay">
+          <div>
+            <h1>Conventional Advertising</h1>
+            <p>Your description here.</p>
+            <br />
+            <button class="custom-btn btn-6"><span>Read More</span></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="image-container">
+        <img src="img/image_part_006.jpg" alt="Sample Image" />
+        <video class="hover-video" autoplay muted loop>
+          <source
+            src="https://videos.pexels.com/video-files/8212291/8212291-hd_1920_1080_30fps.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+        <div class="overlay">
+          <div>
+            <h1>And Many More</h1>
+            <p>Your description here.</p>
+            <br />
+            <button class="custom-btn btn-6"><span>Read More</span></button>
+          </div>
+        </div>
+      </div>
+    </body>
+  </html>
+</div>

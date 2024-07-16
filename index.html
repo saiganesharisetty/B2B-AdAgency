@@ -6,10 +6,12 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="" name="keywords" />
     <meta content="" name="description" />
+    <link rel="stylesheet" href="button.css" />
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -160,18 +162,21 @@
             </div>
             <a href="contact.html" class="nav-item nav-link">Contact Us</a>
           </div>
-          <a
-            href="#"
-            class="btn btn-primary rounded-pill py-2 px-4 my-3 my-lg-0 flex-shrink-0"
-            >Get Started</a
-          >
+          <!-- 
+          <button class="custom-btn btn-5">
+            <span class="topbtn">Read More</span>
+          </button>
+          -->
         </div>
       </nav>
 
       <!-- Carousel Start -->
       <div class="header-carousel owl-carousel">
         <div class="header-carousel-item">
-          <img src="img/carousel-1.jpg" class="img-fluid w-100" alt="Image" />
+          <video class="img-fluid w-100" autoplay muted loop>
+            <source src="img/carousel-1.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
           <div class="carousel-caption">
             <div class="container">
               <div class="row gy-0 gx-5">
@@ -240,7 +245,13 @@
           </div>
         </div>
         <div class="header-carousel-item">
-          <img src="img/carousel-2.jpg" class="img-fluid w-100" alt="Image" />
+          <video class="img-fluid w-100" autoplay muted loop>
+            <source
+              src="https://videos.pexels.com/video-files/1943483/1943483-uhd_2560_1440_25fps.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
           <div class="carousel-caption">
             <div class="container">
               <div class="row g-5">
@@ -311,152 +322,139 @@
     </div>
     <!-- Navbar & Hero End -->
 
-    <!-- Abvout Start -->
-    <div class="container-fluid about py-5">
-      <div class="container py-5">
-        <div class="row g-5 align-items-center">
-          <div class="col-xl-7 wow fadeInLeft" data-wow-delay="0.2s">
-            <div>
-              <h4 class="text-primary">About Us</h4>
-              <h1 class="display-5 mb-4">
-                Meet our company unless miss the opportunity
-              </h1>
-              <p class="mb-4">
-                Discover what sets our agency apart and how we can elevate your
-                brand to new heights. Our dedicated team of professionals is
-                ready to collaborate with you, offering innovative solutions
-                tailored to your needs.
-              </p>
-              <div class="row g-4">
-                <div class="col-md-6 col-lg-6 col-xl-6">
-                  <div class="d-flex">
-                    <div>
-                      <i
-                        class="bi bi-bookmark-heart-fill fa-3x text-primary"
-                      ></i>
-                    </div>
-                    <div class="ms-4">
-                      <h4>Innovative</h4>
-                      <p>Pioneering new ideas in advertising solutions.</p>
+    <!-- About Start -->
+    <div id="about-1">
+      <div class="container-fluid about py-5">
+        <div class="container py-5">
+          <div class="row g-5 align-items-center">
+            <div class="col-xl-7 wow fadeInLeft" data-wow-delay="0.2s">
+              <div>
+                <h4 class="text-primary">About Us</h4>
+                <h1 class="display-5 mb-4">
+                  Meet our company unless miss the opportunity
+                </h1>
+                <p class="mb-4">
+                  Discover what sets our agency apart and how we can elevate
+                  your brand to new heights. Our dedicated team of professionals
+                  is ready to collaborate with you, offering innovative
+                  solutions tailored to your needs.
+                </p>
+                <div class="row g-4">
+                  <div class="col-md-6 col-lg-6 col-xl-6">
+                    <div class="d-flex">
+                      <div>
+                        <i
+                          class="bi bi-bookmark-heart-fill fa-3x text-primary"
+                        ></i>
+                      </div>
+                      <div class="ms-4">
+                        <h4>Innovative</h4>
+                        <p>Pioneering new ideas in advertising solutions.</p>
+                      </div>
                     </div>
                   </div>
-                </div>
 
-                <div class="col-md-6 col-lg-6 col-xl-6">
-                  <div class="d-flex">
-                    <div>
-                      <i
-                        class="bi bi-bookmark-heart-fill fa-3x text-primary"
-                      ></i>
-                    </div>
-                    <div class="ms-4">
-                      <h4>Dynamic</h4>
-                      <p>Adapting swiftly to market trends and changes.</p>
+                  <div class="col-md-6 col-lg-6 col-xl-6">
+                    <div class="d-flex">
+                      <div>
+                        <i
+                          class="bi bi-bookmark-heart-fill fa-3x text-primary"
+                        ></i>
+                      </div>
+                      <div class="ms-4">
+                        <h4>Dynamic</h4>
+                        <p>Adapting swiftly to market trends and changes.</p>
+                      </div>
                     </div>
                   </div>
-                </div>
 
-                <div class="col-md-6 col-lg-6 col-xl-6">
-                  <div class="d-flex">
-                    <div>
-                      <i
-                        class="bi bi-bookmark-heart-fill fa-3x text-primary"
-                      ></i>
-                    </div>
-                    <div class="ms-4">
-                      <h4>Creative</h4>
-                      <p>Crafting compelling and imaginative campaigns.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6 col-lg-6 col-xl-6">
-                  <div class="d-flex">
-                    <div>
-                      <i
-                        class="bi bi-bookmark-heart-fill fa-3x text-primary"
-                      ></i>
-                    </div>
-                    <div class="ms-4">
-                      <h4>Targeted</h4>
-                      <p>Precisely reaching your desired audience.</p>
+                  <div class="col-md-6 col-lg-6 col-xl-6">
+                    <div class="d-flex">
+                      <div>
+                        <i
+                          class="bi bi-bookmark-heart-fill fa-3x text-primary"
+                        ></i>
+                      </div>
+                      <div class="ms-4">
+                        <h4>Creative</h4>
+                        <p>Crafting compelling and imaginative campaigns.</p>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="col-md-6 col-lg-6 col-xl-6">
-                  <div class="d-flex">
-                    <div>
-                      <i
-                        class="bi bi-bookmark-heart-fill fa-3x text-primary"
-                      ></i>
-                    </div>
-                    <div class="ms-4">
-                      <h4>Scalable</h4>
-                      <p>Adaptable to varying budgets and needs.</p>
+                  <div class="col-md-6 col-lg-6 col-xl-6">
+                    <div class="d-flex">
+                      <div>
+                        <i
+                          class="bi bi-bookmark-heart-fill fa-3x text-primary"
+                        ></i>
+                      </div>
+                      <div class="ms-4">
+                        <h4>Targeted</h4>
+                        <p>Precisely reaching your desired audience.</p>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="col-sm-6">
-                  <a
-                    href="#"
-                    class="btn btn-primary rounded-pill py-3 px-5 flex-shrink-0"
-                    >Discover Now</a
-                  >
-                </div>
-                <div class="col-sm-6">
-                  <div class="d-flex">
-                    <i class="fas fa-phone-alt fa-2x text-primary me-4"></i>
-                    <div>
-                      <h4>Call Us</h4>
-                      <p class="mb-0 fs-5" style="letter-spacing: 1px">
-                        +01234567890
-                      </p>
+                  <div class="col-md-6 col-lg-6 col-xl-6">
+                    <div class="d-flex">
+                      <div>
+                        <i
+                          class="bi bi-bookmark-heart-fill fa-3x text-primary"
+                        ></i>
+                      </div>
+                      <div class="ms-4">
+                        <h4>Scalable</h4>
+                        <p>Adaptable to varying budgets and needs.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <a
+                      href="#"
+                      class="btn btn-primary rounded-pill py-3 px-5 flex-shrink-0"
+                      >Discover Now</a
+                    >
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="d-flex">
+                      <i class="fas fa-phone-alt fa-2x text-primary me-4"></i>
+                      <div>
+                        <h4>Call Us</h4>
+                        <p class="mb-0 fs-5" style="letter-spacing: 1px">
+                          +01234567890
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-xl-5 wow fadeInRight" data-wow-delay="0.2s">
-            <div class="bg-primary rounded position-relative overflow-hidden">
-              <img
-                src="img/about-2.png"
-                class="img-fluid rounded w-100"
-                alt=""
-              />
+            <div class="col-xl-5 wow fadeInRight" data-wow-delay="0.2s">
+              <div class="rounded position-relative overflow-hidden">
+                <video
+                  id="aboutvid"
+                  class="img-fluid w-100"
+                  autoplay
+                  muted
+                  loop
+                >
+                  <source src="img/art.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
 
-              <div
-                class=""
-                style="position: absolute; top: -15px; right: -15px"
-              >
-                <img
-                  src="img/about-3.png"
-                  class="img-fluid"
-                  style="width: 150px; height: 150px; opacity: 0.7"
-                  alt=""
-                />
-              </div>
-              <div
-                class=""
-                style="
-                  position: absolute;
-                  top: -20px;
-                  left: 10px;
-                  transform: rotate(90deg);
-                "
-              >
-                <img
-                  src="img/about-4.png"
-                  class="img-fluid"
-                  style="width: 100px; height: 150px; opacity: 0.9"
-                  alt=""
-                />
-              </div>
-              <div class="rounded-bottom">
-                <img
-                  src="img/about-5.jpg"
-                  class="img-fluid rounded-bottom w-100"
-                  alt=""
-                />
+                <div
+                  class=""
+                  style="position: absolute; top: -15px; right: -15px"
+                ></div>
+                <div
+                  class=""
+                  style="
+                    position: absolute;
+                    top: -20px;
+                    left: 10px;
+                    transform: rotate(90deg);
+                  "
+                ></div>
+                <div class="rounded-bottom"></div>
               </div>
             </div>
           </div>
@@ -466,224 +464,567 @@
     <!-- About End -->
 
     <!-- Services Start -->
-    <div class="container-fluid service pb-5">
-      <div class="container pb-5">
-        <div
-          class="text-center mx-auto pb-5 wow fadeInUp"
-          data-wow-delay="0.2s"
-          style="max-width: 800px"
-        >
-          <h4 class="text-primary">Our Services</h4>
-          <h1 class="display-5 mb-4">We Services provided best offer</h1>
-          <p class="mb-0">
-            Discover unparalleled value with our comprehensive range of
-            services, designed to meet your every need. Our expert team ensures
-            top-quality solutions tailored to your goals, delivering exceptional
-            results. Experience the difference with our unbeatable offers that
-            enhance your business success.
-          </p>
-        </div>
-        <div class="row g-4">
-          <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
-            <div class="service-item">
-              <div class="service-img">
-                <img
-                  src="img/service-1.jpg"
-                  class="img-fluid rounded-top w-100"
-                  alt="Image"
-                />
-              </div>
-              <div class="rounded-bottom p-4">
-                <a href="#" class="h4 d-inline-block mb-4"> Web Designing</a>
-                <p class="mb-4">
-                  Crafting intuitive websites that blend functionality with
-                  aesthetic appeal, ensuring seamless user experiences.
-                </p>
-                <a class="btn btn-primary rounded-pill py-2 px-4" href="#"
-                  >Learn More</a
-                >
-              </div>
+    <div id="servicesec">
+      <div class="video-background">
+        <!--  <video class="img-fluid w-100" autoplay muted loop>
+          <source src="img/backgroundwhite.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        -->
+      </div>
+      <div class="content">
+        <div class="container-fluid service pb-5">
+          <div class="container pb-5">
+            <div
+              class="text-center mx-auto pb-5 wow fadeInUp"
+              data-wow-delay="0.2s"
+              style="max-width: 800px"
+            >
+              <h4 class="text-primary">Our Services</h4>
+              <h1 class="display-5 mb-4">We Services provided best offer</h1>
+              <p class="mb-0">
+                Discover unparalleled value with our comprehensive range of
+                services, designed to meet your every need. Our expert team
+                ensures top-quality solutions tailored to your goals, delivering
+                exceptional results. Experience the difference with our
+                unbeatable offers that enhance your business success.
+              </p>
             </div>
-          </div>
-          <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
-            <div class="service-item">
-              <div class="service-img">
-                <img
-                  src="img/service-2.jpg"
-                  class="img-fluid rounded-top w-100"
-                  alt="Image"
-                />
-              </div>
-              <div class="rounded-bottom p-4">
-                <a href="#" class="h4 d-inline-block mb-4">UI/UX Designing: </a>
-                <p class="mb-4">
-                  Designing interfaces that prioritize user needs, enhancing
-                  usability and satisfaction through intuitive interactions.
-                </p>
-                <a class="btn btn-primary rounded-pill py-2 px-4" href="#"
-                  >Learn More</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
-            <div class="service-item">
-              <div class="service-img">
-                <img
-                  src="img/service-3.jpg"
-                  class="img-fluid rounded-top w-100"
-                  alt="Image"
-                />
-              </div>
-              <div class="rounded-bottom p-4">
-                <a href="#" class="h4 d-inline-block mb-4">Video Editing</a>
-                <p class="mb-4">
-                  ransforming raw footage into captivating visual stories with
-                  precision editing and creative flair, tailored to engage your
-                  audience.
-                </p>
-                <a class="btn btn-primary rounded-pill py-2 px-4" href="#"
-                  >Learn More</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
-            <div class="service-item">
-              <div class="service-img">
-                <img
-                  src="img/service-4.jpg"
-                  class="img-fluid rounded-top w-100"
-                  alt="Image"
-                />
-              </div>
-              <div class="rounded-bottom p-4">
-                <a href="#" class="h4 d-inline-block mb-4">Collaboration</a>
-                <p class="mb-4">
-                  Fostering teamwork and synergy across projects, leveraging
-                  diverse talents to achieve unified goals and exceptional
-                  results.
-                </p>
-                <a class="btn btn-primary rounded-pill py-2 px-4" href="#"
-                  >Learn More</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
-            <div class="service-item">
-              <div class="service-img">
-                <img
-                  src="img/service-5.jpg"
-                  class="img-fluid rounded-top w-100"
-                  alt="Image"
-                />
-              </div>
-              <div class="rounded-bottom p-4">
-                <a href="#" class="h4 d-inline-block mb-4">Organic Marketing</a>
-                <p class="mb-4">
-                  Cultivating genuine connections with your audience through
-                  authentic content and strategic engagement, fostering
-                  long-term loyalty.
-                </p>
-                <a class="btn btn-primary rounded-pill py-2 px-4" href="#"
-                  >Learn More</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
-            <div class="service-item">
-              <div class="service-img">
-                <img
-                  src="img/service-6.jpg"
-                  class="img-fluid rounded-top w-100"
-                  alt="Image"
-                />
-              </div>
-              <div class="rounded-bottom p-4">
-                <a href="#" class="h4 d-inline-block mb-4"
-                  >Strategy Management</a
-                >
-                <p class="mb-4">
-                  Developing tailored strategies that align with your
-                  objectives, optimizing resources and guiding sustainable
-                  growth and success.
-                </p>
-                <a class="btn btn-primary rounded-pill py-2 px-4" href="#"
-                  >Learn More</a
-                >
-              </div>
-            </div>
-          </div>
 
-          <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
-            <div class="service-item">
-              <div class="service-img">
-                <img
-                  src="img/service-6.jpg"
-                  class="img-fluid rounded-top w-100"
-                  alt="Image"
+            <!DOCTYPE html>
+            <html lang="en">
+              <head>
+                <meta charset="UTF-8" />
+                <meta
+                  name="viewport"
+                  content="width=device-width, initial-scale=1.0"
                 />
-              </div>
-              <div class="rounded-bottom p-4">
-                <a href="#" class="h4 d-inline-block mb-4">Digital Marketing</a>
-                <p class="mb-4">
-                  Deploying data-driven tactics across digital channels to
-                  maximize reach, engagement, and conversion, driving measurable
-                  business outcomes.
-                </p>
-                <a class="btn btn-primary rounded-pill py-2 px-4" href="#"
-                  >Learn More</a
-                >
-              </div>
-            </div>
-          </div>
 
-          <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
-            <div class="service-item">
-              <div class="service-img">
-                <img
-                  src="img/service-6.jpg"
-                  class="img-fluid rounded-top w-100"
-                  alt="Image"
-                />
-              </div>
-              <div class="rounded-bottom p-4">
-                <a href="#" class="h4 d-inline-block mb-4">Networking</a>
-                <p class="mb-4">
-                  Building robust connections and partnerships within your
-                  industry, enhancing visibility and unlocking opportunities for
-                  growth and innovation.
-                </p>
-                <a class="btn btn-primary rounded-pill py-2 px-4" href="#"
-                  >Learn More</a
-                >
-              </div>
-            </div>
-          </div>
+                <title>Image and Video Hover Effect</title>
+                <style>
+                  .custom-btn {
+                    width: 130px;
+                    height: 40px;
+                    color: #fff;
+                    border-radius: 5px;
+                    padding: 10px 25px;
+                    font-family: "Lato", sans-serif;
+                    font-weight: 500;
+                    background: transparent;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+                    position: relative;
+                    display: inline-block;
+                    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+                      7px 7px 20px 0px rgba(0, 0, 0, 0.1),
+                      4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+                    outline: none;
+                  }
 
-          <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
-            <div class="service-item">
-              <div class="service-img">
-                <img
-                  src="img/service-6.jpg"
-                  class="img-fluid rounded-top w-100"
-                  alt="Image"
-                />
+                  /* 6 */
+                  .btn-6 {
+                    background: rgb(247, 150, 192);
+                    background: radial-gradient(
+                      circle,
+                      rgba(247, 150, 192, 1) 0%,
+                      rgba(118, 174, 241, 1) 100%
+                    );
+                    line-height: 42px;
+                    padding: 0;
+                    border: none;
+                  }
+                  .btn-6 span {
+                    position: relative;
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                  }
+                  .btn-6:before,
+                  .btn-6:after {
+                    position: absolute;
+                    content: "";
+                    height: 0%;
+                    width: 1px;
+                    box-shadow: -1px -1px 20px 0px rgba(255, 255, 255, 1),
+                      -4px -4px 5px 0px rgba(255, 255, 255, 1),
+                      7px 7px 20px 0px rgba(0, 0, 0, 0.4),
+                      4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+                  }
+                  .btn-6:before {
+                    right: 0;
+                    top: 0;
+                    transition: all 500ms ease;
+                  }
+                  .btn-6:after {
+                    left: 0;
+                    bottom: 0;
+                    transition: all 500ms ease;
+                  }
+                  .btn-6:hover {
+                    background: transparent;
+                    color: #76aef1;
+                    box-shadow: none;
+                  }
+                  .btn-6:hover:before {
+                    transition: all 500ms ease;
+                    height: 100%;
+                  }
+                  .btn-6:hover:after {
+                    transition: all 500ms ease;
+                    height: 100%;
+                  }
+                  .btn-6 span:before,
+                  .btn-6 span:after {
+                    position: absolute;
+                    content: "";
+                    box-shadow: -1px -1px 20px 0px rgba(255, 255, 255, 1),
+                      -4px -4px 5px 0px rgba(255, 255, 255, 1),
+                      7px 7px 20px 0px rgba(0, 0, 0, 0.4),
+                      4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+                  }
+                  .btn-6 span:before {
+                    left: 0;
+                    top: 0;
+                    width: 0%;
+                    height: 0.5px;
+                    transition: all 500ms ease;
+                  }
+                  .btn-6 span:after {
+                    right: 0;
+                    bottom: 0;
+                    width: 0%;
+                    height: 0.5px;
+                    transition: all 500ms ease;
+                  }
+                  .btn-6 span:hover:before {
+                    width: 100%;
+                  }
+                  .btn-6 span:hover:after {
+                    width: 100%;
+                  }
+
+                  .image-container {
+                    position: relative;
+                    display: inline-block;
+                    margin: -2px;
+                    margin-top: -5px;
+                    margin-left: -5px;
+                  }
+
+                  .image-container img {
+                    display: block;
+
+                    transition: opacity 0.3s;
+                  }
+
+                  .image-container .overlay {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+
+                    background: rgba(0, 0, 0, 0.5);
+                    color: white;
+                    opacity: 0;
+                    transition: opacity 0.3s;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                  }
+
+                  .image-container:hover .overlay {
+                    opacity: 1;
+                  }
+
+                  .image-container:hover img {
+                    opacity: 0;
+                  }
+
+                  .image-container .hover-video {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+
+                    display: none;
+                    object-fit: cover;
+                  }
+                  .image-container .hover-video {
+                    width: 46.66666vh;
+                    height: 33.33333vh;
+                  }
+
+                  .image-container .overlay {
+                    width: 46.66666vh;
+                    height: 33.33333vh;
+                  }
+
+                  .image-container img {
+                    width: 46.66666vh;
+                    height: 33.33333vh;
+                  }
+                  .image-container:hover .hover-video {
+                    display: block;
+                  }
+
+                  .overlay h1 {
+                    font-size: 24px;
+                    margin: 0;
+                  }
+
+                  .overlay p {
+                    font-size: 16px;
+                    margin: 10px 0 0;
+                  }
+                  .servicesection {
+                    /*margin-left: 40vh;*/
+                    margin-top: 2vh;
+                  }
+                </style>
+              </head>
+              <body>
+                <div class="servicesection">
+                  <div class="image-container">
+                    <img src="img/image_part_001.jpg" alt="Sample Image" />
+                    <video class="hover-video" autoplay muted loop>
+                      <source
+                        src="https://videos.pexels.com/video-files/8089117/8089117-uhd_2732_1440_25fps.mp4"
+                        type="video/mp4"
+                      />
+                      Your browser does not support the video tag.
+                    </video>
+                    <div class="overlay">
+                      <div>
+                        <h1>AD Films</h1>
+                        <p>Your description here.</p>
+                        <br />
+                        <button class="custom-btn btn-6">
+                          <span>Read More</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="image-container">
+                    <img src="img/image_part_002.jpg" alt="Sample Image" />
+                    <video class="hover-video" autoplay muted loop>
+                      <source
+                        src="https://videos.pexels.com/video-files/6706920/6706920-hd_1920_1080_25fps.mp4"
+                        type="video/mp4"
+                      />
+                      Your browser does not support the video tag.
+                    </video>
+                    <div class="overlay">
+                      <div>
+                        <h1>Product Shoots</h1>
+                        <p>Your description here.</p>
+                        <br />
+                        <button class="custom-btn btn-6">
+                          <span>Read More</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="image-container">
+                    <img src="img/image_part_003.jpg" alt="Sample Image" />
+                    <video class="hover-video" autoplay muted loop>
+                      <source
+                        src="https://videos.pexels.com/video-files/853988/853988-hd_1920_1080_25fps.mp4"
+                        type="video/mp4"
+                      />
+                      Your browser does not support the video tag.
+                    </video>
+                    <div class="overlay">
+                      <div>
+                        <h1>Social Media Marketing</h1>
+                        <p>Your description here.</p>
+                        <br />
+                        <button class="custom-btn btn-6">
+                          <span>Read More</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <br />
+                  <div class="image-container">
+                    <img src="img/image_part_004.jpg" alt="Sample Image" />
+                    <video class="hover-video" autoplay muted loop>
+                      <source
+                        src="https://videos.pexels.com/video-files/7308231/7308231-hd_1080_1920_24fps.mp4"
+                        type="video/mp4"
+                      />
+                      Your browser does not support the video tag.
+                    </video>
+                    <div class="overlay">
+                      <div>
+                        <h1>Digital Media Marketing</h1>
+                        <p>Your description here.</p>
+                        <br />
+                        <button class="custom-btn btn-6">
+                          <span>Read More</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="image-container">
+                    <img src="img/image_part_005.jpg" alt="Sample Image" />
+                    <video class="hover-video" autoplay muted loop>
+                      <source
+                        src="https://videos.pexels.com/video-files/5266564/5266564-hd_1920_1080_30fps.mp4"
+                        type="video/mp4"
+                      />
+                      Your browser does not support the video tag.
+                    </video>
+                    <div class="overlay">
+                      <div>
+                        <h1>Conventional Advertising</h1>
+                        <p>Your description here.</p>
+                        <br />
+                        <button class="custom-btn btn-6">
+                          <span>Read More</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="image-container">
+                    <img src="img/image_part_006.jpg" alt="Sample Image" />
+                    <video class="hover-video" autoplay muted loop>
+                      <source
+                        src="https://videos.pexels.com/video-files/8212291/8212291-hd_1920_1080_30fps.mp4"
+                        type="video/mp4"
+                      />
+                      Your browser does not support the video tag.
+                    </video>
+                    <div class="overlay">
+                      <div>
+                        <h1>And Many More</h1>
+                        <p>Your description here.</p>
+                        <br />
+                        <button class="custom-btn btn-6">
+                          <span>Read More</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </body>
+            </html>
+
+            <!--
+            <div class="row g-4">
+              <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="service-item">
+                  <div class="service-img">
+                    <img
+                      src="img/service-1.jpg"
+                      class="img-fluid rounded-top w-100"
+                      alt="Image"
+                    />
+                  </div>
+                  <div class="rounded-bottom p-4">
+                    <a href="#" class="h4 d-inline-block mb-4">
+                      Web Designing</a
+                    >
+                    <p class="mb-4">
+                      Crafting intuitive websites that blend functionality with
+                      aesthetic appeal, ensuring seamless user experiences.
+                    </p>
+                    <a class="btn btn-primary rounded-pill py-2 px-4" href="#"
+                      >Learn More</a
+                    >
+                  </div>
+                </div>
               </div>
-              <div class="rounded-bottom p-4">
-                <a href="#" class="h4 d-inline-block mb-4">Branding</a>
-                <p class="mb-4">
-                  Creating distinctive identities that resonate with your target
-                  audience, forging emotional connections and establishing a
-                  memorable presence in the market.
-                </p>
-                <a class="btn btn-primary rounded-pill py-2 px-4" href="#"
-                  >Learn More</a
-                >
+              <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+                <div class="service-item">
+                  <div class="service-img">
+                    <img
+                      src="img/service-2.jpg"
+                      class="img-fluid rounded-top w-100"
+                      alt="Image"
+                    />
+                  </div>
+                  <div class="rounded-bottom p-4">
+                    <a href="#" class="h4 d-inline-block mb-4"
+                      >UI/UX Designing:
+                    </a>
+                    <p class="mb-4">
+                      Designing interfaces that prioritize user needs, enhancing
+                      usability and satisfaction through intuitive interactions.
+                    </p>
+                    <a class="btn btn-primary rounded-pill py-2 px-4" href="#"
+                      >Learn More</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
+                <div class="service-item">
+                  <div class="service-img">
+                    <img
+                      src="img/service-3.jpg"
+                      class="img-fluid rounded-top w-100"
+                      alt="Image"
+                    />
+                  </div>
+                  <div class="rounded-bottom p-4">
+                    <a href="#" class="h4 d-inline-block mb-4">Video Editing</a>
+                    <p class="mb-4">
+                      ransforming raw footage into captivating visual stories
+                      with precision editing and creative flair, tailored to
+                      engage your audience.
+                    </p>
+                    <a class="btn btn-primary rounded-pill py-2 px-4" href="#"
+                      >Learn More</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="service-item">
+                  <div class="service-img">
+                    <img
+                      src="img/service-4.jpg"
+                      class="img-fluid rounded-top w-100"
+                      alt="Image"
+                    />
+                  </div>
+                  <div class="rounded-bottom p-4">
+                    <a href="#" class="h4 d-inline-block mb-4">Collaboration</a>
+                    <p class="mb-4">
+                      Fostering teamwork and synergy across projects, leveraging
+                      diverse talents to achieve unified goals and exceptional
+                      results.
+                    </p>
+                    <a class="btn btn-primary rounded-pill py-2 px-4" href="#"
+                      >Learn More</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+                <div class="service-item">
+                  <div class="service-img">
+                    <img
+                      src="img/service-5.jpg"
+                      class="img-fluid rounded-top w-100"
+                      alt="Image"
+                    />
+                  </div>
+                  <div class="rounded-bottom p-4">
+                    <a href="#" class="h4 d-inline-block mb-4"
+                      >Organic Marketing</a
+                    >
+                    <p class="mb-4">
+                      Cultivating genuine connections with your audience through
+                      authentic content and strategic engagement, fostering
+                      long-term loyalty.
+                    </p>
+                    <a class="btn btn-primary rounded-pill py-2 px-4" href="#"
+                      >Learn More</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
+                <div class="service-item">
+                  <div class="service-img">
+                    <img
+                      src="img/service-6.jpg"
+                      class="img-fluid rounded-top w-100"
+                      alt="Image"
+                    />
+                  </div>
+                  <div class="rounded-bottom p-4">
+                    <a href="#" class="h4 d-inline-block mb-4"
+                      >Strategy Management</a
+                    >
+                    <p class="mb-4">
+                      Developing tailored strategies that align with your
+                      objectives, optimizing resources and guiding sustainable
+                      growth and success.
+                    </p>
+                    <a class="btn btn-primary rounded-pill py-2 px-4" href="#"
+                      >Learn More</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
+                <div class="service-item">
+                  <div class="service-img">
+                    <img
+                      src="img/service-6.jpg"
+                      class="img-fluid rounded-top w-100"
+                      alt="Image"
+                    />
+                  </div>
+                  <div class="rounded-bottom p-4">
+                    <a href="#" class="h4 d-inline-block mb-4"
+                      >Digital Marketing</a
+                    >
+                    <p class="mb-4">
+                      Deploying data-driven tactics across digital channels to
+                      maximize reach, engagement, and conversion, driving
+                      measurable business outcomes.
+                    </p>
+                    <a class="btn btn-primary rounded-pill py-2 px-4" href="#"
+                      >Learn More</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
+                <div class="service-item">
+                  <div class="service-img">
+                    <img
+                      src="img/service-6.jpg"
+                      class="img-fluid rounded-top w-100"
+                      alt="Image"
+                    />
+                  </div>
+                  <div class="rounded-bottom p-4">
+                    <a href="#" class="h4 d-inline-block mb-4">Networking</a>
+                    <p class="mb-4">
+                      Building robust connections and partnerships within your
+                      industry, enhancing visibility and unlocking opportunities
+                      for growth and innovation.
+                    </p>
+                    <a class="btn btn-primary rounded-pill py-2 px-4" href="#"
+                      >Learn More</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
+                <div class="service-item">
+                  <div class="service-img">
+                    <img
+                      src="img/service-6.jpg"
+                      class="img-fluid rounded-top w-100"
+                      alt="Image"
+                    />
+                  </div>
+                  <div class="rounded-bottom p-4">
+                    <a href="#" class="h4 d-inline-block mb-4">Branding</a>
+                    <p class="mb-4">
+                      Creating distinctive identities that resonate with your
+                      target audience, forging emotional connections and
+                      establishing a memorable presence in the market.
+                    </p>
+                    <a class="btn btn-primary rounded-pill py-2 px-4" href="#"
+                      >Learn More</a
+                    >
+                  </div>
+                </div>
               </div>
             </div>
+            -->
           </div>
         </div>
       </div>
