@@ -17,7 +17,9 @@
       rel="stylesheet"
     />
 
-    <!-- Icon Font Stylesheet -->
+    <!-- Icon Font Stylesheet
+     <link rel="stylesheet" href="buttonstyler.css" /> 
+    -->
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
@@ -33,10 +35,12 @@
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link id="cssboot" href="css/bootstrapdark.min.css" rel="stylesheet" />
 
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet" />
+    <!-- Template Stylesheet
+    <link href="css/style.css" rel="stylesheet" /> 
+    -->
+    <link id="cssnormal" href="css/styledark.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -127,10 +131,13 @@
       >
         <a href="" class="navbar-brand p-0">
           <div id="headingtop">
-            <img src="img/b2logo.png" alt="Logo" height="300%" width="140%" />
-            <div class="heading">
-              <h3 class="text-primary"></h3>
-            </div>
+            <img
+              src="img/b2logo.png"
+              id="logoimg"
+              alt="Logo"
+              height="100vh"
+              width="200px"
+            />
           </div>
         </a>
         <button
@@ -161,12 +168,20 @@
               </div>
             </div>
             <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+
+            <input type="checkbox" id="dark-mode" class="input nav-item" />
+            <label for="dark-mode" class="labelbutton">
+              <div class="circleofbutton"></div>
+            </label>
+            <script src="theameswitcher.js"></script>
+
+            <!-- 
+            <button id="theme-switcher" class="custom-btn btn-12">
+              <span id="theme-spanner1" class="darkbutton">Click Me</span
+              ><span id="theme-spanner2" class="darkbutton">Change Theme?</span>
+            </button>
+-->
           </div>
-          <!-- 
-          <button class="custom-btn btn-5">
-            <span class="topbtn">Read More</span>
-          </button>
-          -->
         </div>
       </nav>
 
@@ -330,7 +345,7 @@
             <div class="col-xl-7 wow fadeInLeft" data-wow-delay="0.2s">
               <div>
                 <h4 class="text-primary">About Us</h4>
-                <h1 class="display-5 mb-4">
+                <h1 class="display-5 mb-4 graditext">
                   Meet our company unless miss the opportunity
                 </h1>
                 <p class="mb-4">
@@ -348,7 +363,7 @@
                         ></i>
                       </div>
                       <div class="ms-4">
-                        <h4>Innovative</h4>
+                        <h4 class="abthead">Innovative</h4>
                         <p>Pioneering new ideas in advertising solutions.</p>
                       </div>
                     </div>
@@ -362,7 +377,7 @@
                         ></i>
                       </div>
                       <div class="ms-4">
-                        <h4>Dynamic</h4>
+                        <h4 class="abthead">Dynamic</h4>
                         <p>Adapting swiftly to market trends and changes.</p>
                       </div>
                     </div>
@@ -376,7 +391,7 @@
                         ></i>
                       </div>
                       <div class="ms-4">
-                        <h4>Creative</h4>
+                        <h4 class="abthead">Creative</h4>
                         <p>Crafting compelling and imaginative campaigns.</p>
                       </div>
                     </div>
@@ -389,7 +404,7 @@
                         ></i>
                       </div>
                       <div class="ms-4">
-                        <h4>Targeted</h4>
+                        <h4 class="abthead">Targeted</h4>
                         <p>Precisely reaching your desired audience.</p>
                       </div>
                     </div>
@@ -402,7 +417,7 @@
                         ></i>
                       </div>
                       <div class="ms-4">
-                        <h4>Scalable</h4>
+                        <h4 class="abthead">Scalable</h4>
                         <p>Adaptable to varying budgets and needs.</p>
                       </div>
                     </div>
@@ -411,15 +426,18 @@
                     <a
                       href="#"
                       class="btn btn-primary rounded-pill py-3 px-5 flex-shrink-0"
-                      >Discover Now</a
+                      ><span>Discover Now</span></a
                     >
                   </div>
                   <div class="col-sm-6">
                     <div class="d-flex">
                       <i class="fas fa-phone-alt fa-2x text-primary me-4"></i>
                       <div>
-                        <h4>Call Us</h4>
-                        <p class="mb-0 fs-5" style="letter-spacing: 1px">
+                        <h4 class="fs-5 abthead">Call Us</h4>
+                        <p
+                          class="phonenum mb-0 fs-5"
+                          style="letter-spacing: 1px"
+                        >
                           +01234567890
                         </p>
                       </div>
@@ -482,7 +500,7 @@
             >
               <h4 class="text-primary">Our Services</h4>
               <h1 class="display-5 mb-4">We Services provided best offer</h1>
-              <p class="mb-0">
+              <p class="mb-4">
                 Discover unparalleled value with our comprehensive range of
                 services, designed to meet your every need. Our expert team
                 ensures top-quality solutions tailored to your goals, delivering
@@ -1138,13 +1156,262 @@
         >
           <h4 class="text-primary">Our Offer</h4>
           <h1 class="display-5 mb-4">Benefits We offer</h1>
-          <p class="mb-0">
+          <!--  <p class="mb-111">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur
             adipisci facilis cupiditate recusandae aperiam temporibus corporis
             itaque quis facere, numquam, ad culpa deserunt sint dolorem autem
             obcaecati, ipsam mollitia hic.
           </p>
+          -->
         </div>
+
+        <div>
+          <!DOCTYPE html>
+          <html lang="en">
+            <head>
+              <meta charset="UTF-8" />
+              <meta
+                name="viewport"
+                content="width=device-width, initial-scale=1.0"
+              />
+              <title>Four Blocks</title>
+              <style>
+                @layer reset {
+                  *,
+                  ::before,
+                  ::after {
+                    box-sizing: border-box;
+                  }
+
+                  :where(:not(dialog)) {
+                    margin: 0;
+                  }
+                }
+
+                @layer demo {
+                  :root {
+                    color-scheme: dark;
+                    --nav-block-size: 74px;
+                  }
+                }
+
+                @layer components.collections {
+                  .sectioncard {
+                    background-color: var(--bs-dark);
+                    display: grid;
+                    inline-size: 100%;
+                    min-block-size: max(
+                      600px,
+                      calc(100dvb - var(--nav-block-size))
+                    );
+                    padding-block-end: 0.75rem;
+                    padding-inline: 0.75rem;
+                    place-items: center;
+                    position: relative;
+                  }
+
+                  .cardsofblocks {
+                    background-color: var(--bs-dark);
+                    block-size: 100%;
+                    display: grid;
+                    gap: 1rem;
+                    inline-size: 100%;
+
+                    @media (width > 1024px) {
+                      grid-template-columns: 1fr 1fr;
+                    }
+                  }
+
+                  .cardofsection {
+                    container-type: size;
+                    inline-size: 100%;
+                    block-size: 100%;
+                    text-decoration: none;
+                    min-block-size: 280px;
+                    position: relative;
+                    border-radius: 20px;
+                    &:hover::after {
+                      opacity: 1;
+                    }
+
+                    &::after {
+                      content: "";
+                      display: block;
+                      inset: 0;
+                      mix-blend-mode: multiply;
+                      opacity: 0;
+                      position: absolute;
+                      transition: opacity 0.2s ease;
+                    }
+
+                    &:hover .figcaption {
+                      display: none;
+                    }
+
+                    &:hover .paragraph {
+                      display: block;
+                      font-size: medium;
+                    }
+                  }
+
+                  .cardofsection-1::after {
+                    background-color: hsl(343, 98%, 52%);
+                    border-radius: 20px;
+                  }
+
+                  .cardofsection-2::after {
+                    background-color: hsl(199, 100%, 38%);
+                    border-radius: 20px;
+                  }
+
+                  .cardofsection-3::after {
+                    background-color: hsl(119, 59%, 64%);
+                    border-radius: 20px;
+                  }
+
+                  .cardofsection-4::after {
+                    background-color: hsl(49, 83%, 69%);
+                    border-radius: 20px;
+                  }
+
+                  .visual {
+                    background-color: var(--bs-dark);
+                    block-size: 100%;
+                    display: grid;
+                    inline-size: 100%;
+                    overflow: hidden;
+                    place-items: center;
+
+                    > * {
+                      grid-area: 1/1;
+                    }
+                  }
+
+                  .cardofsection-img {
+                    block-size: 100cqb;
+                    inline-size: 100cqi;
+                    border-radius: inherit;
+                    display: block;
+                    background: white;
+                    filter: grayscale();
+                    object-fit: cover;
+                    border-radius: 20px;
+                  }
+
+                  .figcaption,
+                  .paragraph {
+                    z-index: 2;
+                    color: white;
+                    font: 400 5cqi / normal system-ui, sans-serif;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    text-align: center;
+                  }
+
+                  .paragraph {
+                    display: none;
+                  }
+                }
+              </style>
+            </head>
+            <body>
+              <sectioncard class="sectioncard">
+                <div class="cardsofblocks">
+                  <a href="#" class="cardofsection cardofsection-1">
+                    <figure class="visual">
+                      <img
+                        class="cardofsection-img"
+                        src="https://raw.githubusercontent.com/mobalti/ui/main/cards-01/images/img-1.avif"
+                        alt="Person with a game controller in hand"
+                      />
+                      <figcaption class="figcaption">
+                        Access to industry-leading expertise.
+                      </figcaption>
+                      <p class="paragraph">
+                        Benefit from our team's deep industry knowledge and
+                        experience, ensuring you receive insights and strategies
+                        that are at the forefront of the field. Our experts are
+                        dedicated to staying ahead of trends and developments,
+                        providing you with the most relevant and effective
+                        solutions available.
+                      </p>
+                    </figure>
+                  </a>
+
+                  <a href="#" class="cardofsection cardofsection-2">
+                    <figure class="visual">
+                      <img
+                        class="cardofsection-img"
+                        src="https://raw.githubusercontent.com/mobalti/ui/main/cards-01/images/img-2.avif"
+                        alt="Person with curly hair in neon lighting"
+                      />
+                      <figcaption class="figcaption">
+                        Continuous innovation for competitive edge.
+                      </figcaption>
+                      <p class="paragraph">
+                        At our core, we prioritize innovation as a driving force
+                        behind your competitive advantage. We continuously
+                        explore new ideas, technologies, and approaches to keep
+                        your strategies fresh and effective. Our commitment to
+                        innovation means you can stay ahead of the curve,
+                        adapting swiftly to market changes and seizing new
+                        opportunities as they arise.
+                      </p>
+                    </figure>
+                  </a>
+
+                  <a href="#" class="cardofsection cardofsection-3">
+                    <figure class="visual">
+                      <img
+                        class="cardofsection-img"
+                        src="https://raw.githubusercontent.com/mobalti/ui/main/cards-01/images/img-3.avif"
+                        alt="Person in vibrant neon lighting with abstract shapes"
+                      />
+                      <figcaption class="figcaption">
+                        Tailored solutions to meet needs.
+                      </figcaption>
+                      <p class="paragraph">
+                        We understand that every business is unique, which is
+                        why we take a personalized approach to crafting
+                        solutions that align perfectly with your specific
+                        requirements and objectives. From initial consultation
+                        to final implementation, we collaborate closely with you
+                        to ensure our strategies and services are tailored to
+                        address your distinct challenges and opportunities.
+                      </p>
+                    </figure>
+                  </a>
+
+                  <a href="#" class="cardofsection cardofsection-4">
+                    <figure class="visual">
+                      <img
+                        class="cardofsection-img"
+                        src="https://raw.githubusercontent.com/mobalti/ui/main/cards-01/images/img-4.avif"
+                        alt="Person wearing a virtual reality headset in a blue-lit room"
+                      />
+                      <figcaption class="figcaption">
+                        Streamlined processes for optimized operations.
+                      </figcaption>
+                      <p class="paragraph">
+                        Efficiency is at the heart of everything we do,
+                        optimizing your operations and workflows for maximum
+                        productivity and performance. We streamline processes
+                        across all facets of your business, eliminating
+                        inefficiencies and reducing unnecessary costs. Our
+                        rigorous approach to optimization ensures that every
+                        aspect of your operations is fine-tuned for seamless
+                        integration and smooth functionality.
+                      </p>
+                    </figure>
+                  </a>
+                </div>
+              </sectioncard>
+            </body>
+          </html>
+        </div>
+        <!-- 
         <div class="row g-5 align-items-center">
           <div class="col-xl-5 wow fadeInLeft" data-wow-delay="0.2s">
             <div class="nav nav-pills bg-light rounded p-5">
@@ -1318,6 +1585,7 @@
             </div>
           </div>
         </div>
+-->
       </div>
     </div>
     <!-- Offer End -->
@@ -1482,17 +1750,17 @@
         >
           <h4 class="text-primary">FAQs</h4>
           <h1 class="display-5 mb-4">Frequently Asked Questions</h1>
-          <p class="mb-0">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur
-            adipisci facilis cupiditate recusandae aperiam temporibus corporis
-            itaque quis facere, numquam, ad culpa deserunt sint dolorem autem
-            obcaecati, ipsam mollitia hic.
+          <p class="mb-111">
+            Frequently Asked Questions (FAQs) provide clear and concise answers
+            to common inquiries, helping users quickly find the information they
+            need. This section addresses a variety of topics, ranging from
+            product details to troubleshooting tips.
           </p>
         </div>
         <div class="row g-5 align-items-center">
           <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.2s">
             <div
-              class="accordion accordion-flush bg-light rounded p-5"
+              class="accordion accordion-flush blackgrad rounded p-5"
               id="accordionFlushSection"
             >
               <div class="accordion-item rounded-top">
@@ -1687,7 +1955,7 @@
         >
           <h4 class="text-primary">Our Team</h4>
           <h1 class="display-5 mb-4">Meet Our Advisers</h1>
-          <p class="mb-0">
+          <p class="mb-111">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur
             adipisci facilis cupiditate recusandae aperiam temporibus corporis
             itaque quis facere, numquam, ad culpa deserunt sint dolorem autem
@@ -1704,8 +1972,8 @@
                 <img src="img/team-1.jpg" class="img-fluid" alt="" />
               </div>
               <div class="team-title">
-                <h4 class="mb-0">David James</h4>
-                <p class="mb-0">Profession</p>
+                <h4 class="mb-0">K L N Prasad</h4>
+                <p class="mb-0">Manager</p>
               </div>
               <div class="team-icon">
                 <a
@@ -1740,7 +2008,7 @@
                 <img src="img/team-2.jpg" class="img-fluid" alt="" />
               </div>
               <div class="team-title">
-                <h4 class="mb-0">David James</h4>
+                <h4 class="mb-111">David James</h4>
                 <p class="mb-0">Profession</p>
               </div>
               <div class="team-icon">
@@ -1776,7 +2044,7 @@
                 <img src="img/team-3.jpg" class="img-fluid" alt="" />
               </div>
               <div class="team-title">
-                <h4 class="mb-0">David James</h4>
+                <h4 class="mb-111">David James</h4>
                 <p class="mb-0">Profession</p>
               </div>
               <div class="team-icon">
@@ -1812,7 +2080,7 @@
                 <img src="img/team-4.jpg" class="img-fluid" alt="" />
               </div>
               <div class="team-title">
-                <h4 class="mb-0">David James</h4>
+                <h4 class="mb-111">David James</h4>
                 <p class="mb-0">Profession</p>
               </div>
               <div class="team-icon">
@@ -1854,11 +2122,10 @@
         >
           <h4 class="text-primary">Testimonial</h4>
           <h1 class="display-5 mb-4">Our Clients Riviews</h1>
-          <p class="mb-0">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur
-            adipisci facilis cupiditate recusandae aperiam temporibus corporis
-            itaque quis facere, numquam, ad culpa deserunt sint dolorem autem
-            obcaecati, ipsam mollitia hic.
+          <p class="mb-111">
+            Discover what our clients have to say about us. Their honest reviews
+            provide valuable insights into our commitment to excellence and
+            customer satisfaction.
           </p>
         </div>
         <div
@@ -2151,7 +2418,8 @@
     <script src="lib/lightbox/js/lightbox.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
-    <!-- Template Javascript -->
+    <!-- Java Script Code Preloads -->
     <script src="js/main.js"></script>
+    <script src="theameswitcher.js"></script>
   </body>
 </html>
